@@ -1,36 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="custom.css">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="custom.css" />
     <title>Music Player</title>
-</head>
-<body style="background-color: #ce93d8">
-
+  </head>
+  <body style="background-color: #ce93d8">
     <div id="main">
-        <div id="playing" style="border-right: 2px solid #607d8b;">
-            <div class = "progress_bar" onclick = "seek(this)">
-                <div class="Song_Progress" ></div>
-            </div> 
-            <div id="audio-buttons">
-                <div id="audio-buttons-grid">
-                    <i class="fa fa-random " alt="" id="shuffle-music" onclick="shuffler()" title="Shuffle"></i>
-                    <i class="fa fa-step-backward" aria-hidden="true" id="previous" onclick="previousMusic()" title="Previous"></i>
-                    <i class="fa fa-play-circle fa-2" alt="" id="play" onclick="playMusic()" title="play"></i>
-                    <i class="fa fa-step-forward" id="next" onclick="nextMusic()" title="Next"></i>
-                    <i class="fa fa-undo" id="repeat-music" onclick="repeat()" title="repeat"></i>
-                </div>  
-            </div>
+      <div id="playing" style="border-right: 2px solid #607d8b">
+        <div class="progress_bar" onclick="seek(this)">
+          <div class="Song_Progress"></div>
         </div>
-        <div id="list"></div>
+        <div id="audio-buttons">
+          <div id="audio-buttons-grid">
+            <i
+              class="fa fa-random"
+              alt=""
+              id="shuffle-music"
+              onclick="shuffler()"
+              title="Shuffle"
+            ></i>
+            <i
+              class="fa fa-step-backward"
+              aria-hidden="true"
+              id="previous"
+              onclick="previousMusic()"
+              title="Previous"
+            ></i>
+            <i
+              class="fa fa-play-circle fa-2"
+              alt=""
+              id="play"
+              onclick="playMusic()"
+              title="play"
+            ></i>
+            <i
+              class="fa fa-step-forward"
+              id="next"
+              onclick="nextMusic()"
+              title="Next"
+            ></i>
+            <i
+              class="fa fa-undo"
+              id="repeat-music"
+              onclick="repeat()"
+              title="repeat"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <div id="list"></div>
     </div>
     <script src="apiCalling.js"></script>
     <script src="app.js"></script>
-   
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-</body>
+  </body>
 </html>
