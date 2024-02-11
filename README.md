@@ -18,3 +18,11 @@
      3. [License Plate Detection](./learning/computer_vision/licenseplateDetection.py)
      4. [QR Code & BarCode Detection](./learning/computer_vision/QRCodeBarcodeDetection.py)
      5. [Virtual Paint](./learning/computer_vision/virtualpaint.py)
+
+## Future Project Scope
+
+- [ ] Implement Start Rating Functionality
+- [ ] Infinite Scroll
+- [ ] Page Text Translation
+- [ ] Implement Nested Checkboxes where parent and Children checkboxes are synchronized
+- [ ] Poll Widget
